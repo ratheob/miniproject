@@ -51,7 +51,7 @@ function outputData(person) {
 
 
   // Add a class to age, shown everyone born 1950 or earlier*
-  if ((new RegExp(/19[0-5][0-9]/gi)).test(person.birthyear)) {
+  if ((new RegExp(/19[0-5]*/gi)).test(person.birthyear)) {
     row.classList.add('auto');
   }
 
