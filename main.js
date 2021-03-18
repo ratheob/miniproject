@@ -38,6 +38,7 @@ function outputData(person) {
   cell_2.innerHTML = '<a href="'+person.link+'" target="_blank">'+prettyName+'</a>';
   cell_3.innerHTML = person.profession;
   cell_4.innerHTML = person.day + ' ' + person.month + ' 2011';
+   alert("Hello! I am an alert box!!");
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
