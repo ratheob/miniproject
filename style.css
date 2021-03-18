@@ -50,6 +50,7 @@ button:active {
 table {
   border: 1px dotted black;
   margin: 2%;
+  border-collapse: collapse;
 }
 
 thead {
@@ -59,7 +60,6 @@ thead {
 }
 
 th {
-  border-collapse: collapse;
   border: 1px dotted black;
 }
 
