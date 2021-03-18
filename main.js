@@ -25,7 +25,8 @@ function outputData(person) {
   // Make the name more readable, test with: document.write(prettyName + "<br />");
   var prettyName = name.replace(/_/g, ' ');
   // Get the table HTML element
-  var table = document.getElementById("persons-table");
+//  var table = document.getElementById("persons-table");
+var table = document.getElementById('persons-table');
 
   // Create an empty <tr> element and add it to the 2st position of the table:
   var row = table.insertRow(-1);
