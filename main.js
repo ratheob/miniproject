@@ -85,7 +85,6 @@ window.onload = function() {
       // If not hide this row, meaning that this row is not matched by the selected button
         tableRows[i].style.display = "none";
       }
-      echo classList.length
     }
   }
 };
