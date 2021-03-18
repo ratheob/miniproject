@@ -4,6 +4,13 @@ body {
 
 }
 
+.outer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*=== Buttons ====*/
+
 button {
   background: #7dc9bb;
   background-image: -webkit-linear-gradient(top, #7dc9bb, #c4b697);
@@ -38,6 +45,8 @@ button:active {
   background: #7dc9bb;
 }
 
+
+/* ==== Styles for the Table */
 table {
   border: 1px dotted black;
   margin: 2%;
@@ -46,15 +55,16 @@ table {
 thead {
   background-color: #4080bf;
   color: #ffffff;
-  display: inline-block;
   opacity: 0.8;
 }
 
-
-.outer {
-  width: 80%;
-  margin: 0 auto;
+th {
+  border-collapse: collapse;
+  border: 1px dotted black;
 }
+
+
+/*==== Fonts ====*/
 
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
