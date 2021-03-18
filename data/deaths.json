@@ -17,10 +17,10 @@
    },
    {
       "birthyear" : "1966",
-      "name" : "Prince Ali-Reza Pahlavi of Iran",
+      "name" : "Ali-Reza Pahlavi",
       "month" : "January",
       "day" : "4",
-      "profession" : "",
+      "profession" : "Prince Ali-Reza Pahlavi of Iran",
       "link" : "https://en.wikipedia.org/wiki/Ali-Reza_Pahlavi"
    },
    {
@@ -816,10 +816,10 @@
       "name" : "Itamar Franco"
    },
    {
-      "name" : "Archduke Otto of Austria",
+      "name" : "Otto von Habsburg",
       "birthyear" : "1912",
       "link" : "https://en.wikipedia.org/wiki/Otto_von_Habsburg",
-      "profession" : "",
+      "profession" : "Archduke Otto of Austria",
       "day" : "4",
       "month" : "July"
    },
