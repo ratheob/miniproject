@@ -25,10 +25,10 @@ function outputData(person) {
   // Make the name more readable, test with: document.write(prettyName + "<br />");
   var prettyName = name.replace(/_/g, ' ');
   // Get the table HTML element
-  var tablebody = document.getElementsByTagName("tbody")[0];
+  var table = document.getElementById("persons-table");
 
   // Create an empty <tr> element and add it to the 2st position of the table:
-  var row = tablebody.insertRow(0);
+  var row = table.insertRow(-1);
   // Insert new cells (<td> elements) at the first 4 positions of the "new" <tr> element:
   var cell_1 = row.insertCell(0);
   var cell_2 = row.insertCell(1);
@@ -39,7 +39,6 @@ function outputData(person) {
   cell_2.innerHTML = '<a href="'+person.link+'" target="_blank">'+prettyName+'</a>';
   cell_3.innerHTML = person.profession;
   cell_4.innerHTML = person.day + ' ' + person.month + ' 2011';
-   alert("Hello! I am an alert box!!");
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
