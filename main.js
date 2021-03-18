@@ -53,6 +53,11 @@ function outputData(person) {
     row.classList.add('auto');
   }
 
+  // Add a class to age*
+  if ((new RegExp(/19[0-5][0-9]/gi)).test(person.birthyear)) {
+    row.classList.add('auto');
+  }
+
 }
 
 // The below function will get called when the window finishes loading our data
