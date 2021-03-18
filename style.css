@@ -60,7 +60,11 @@ thead {
 }
 
 th {
-  border: 1px dotted black;
+  border: 1px white;
+}
+
+th:first-child, th:last-child {
+  border: none;
 }
 
 
