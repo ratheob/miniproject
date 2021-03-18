@@ -1,27 +1,29 @@
 body {
-  padding: 15% 0;
   font-family: 'Open Sans Condensed', sans-serif;
 
 }
 
 .outer {
   width: 80%;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 /*=== Buttons ====*/
 
 button {
-/*  background: #7dc9bb;
+  /*
+background: #7dc9bb;
   background-image: -webkit-linear-gradient(top, #7dc9bb, #c4b697);
   background-image: -moz-linear-gradient(top, #7dc9bb, #c4b697);
   background-image: -ms-linear-gradient(top, #7dc9bb, #c4b697);
   background-image: -o-linear-gradient(top, #7dc9bb, #c4b697);
   background-image: linear-gradient(to bottom, #7dc9bb, #c4b697);
-  -webkit-border-radius: 14;
+  */-webkit-border-radius: 14;
   -moz-border-radius: 14;
   border-radius: 14px;
-*/
+
+background-image: none;
+background-color: none;
   color: #3498db;
 
   padding: 0.5%;
