@@ -17,24 +17,23 @@ fetch(sourceURL)
     }
   });
 
-// Change inside this function for experimenting
-function outputData(person) {
-  // POPULATING THE TABLE
-  // Get the name from the link
-  var name = person.link.split(/[/]+/).pop();
-  // Make the name more readable, test with: document.write(prettyName + "<br />");
-  var prettyName = name.replace(/_/g, ' ');
-  // Get the table HTML element
-//  var table = document.getElementById("persons-table");
-var table = document.getElementById('persons-table');
+  // Change inside this function for experimenting
+  function outputData(person) {
+    // POPULATING THE TABLE
+    // Get the name from the link
+    var name = person.link.split(/[/]+/).pop();
+    // Make the name more readable, test with: document.write(prettyName + "<br />");
+    var prettyName = name.replace(/_/g, ' ');
+    // Get the table HTML element
+    var table = document.getElementById('persons-table');
+    // Create an empty <tr> element and add it to the 2st position of the table:
+    var row = table.insertRow(-1);
+    // Insert new cells (<td> elements) at the first 4 positions of the "new" <tr> element:
+    var cell_1 = row.insertCell(0);
+    var cell_2 = row.insertCell(1);
+    var cell_3 = row.insertCell(2);
+    var cell_4 = row.insertCell(3);
 
-  // Create an empty <tr> element and add it to the 2st position of the table:
-  var row = table.insertRow(-1);
-  // Insert new cells (<td> elements) at the first 4 positions of the "new" <tr> element:
-  var cell_1 = row.insertCell(0);
-  var cell_2 = row.insertCell(1);
-  var cell_3 = row.insertCell(2);
-  var cell_4 = row.insertCell(3);
   // Add some text to the new cells:
   cell_1.innerHTML = person.birthyear;
   cell_2.innerHTML = '<a href="'+person.link+'" target="_blank">'+prettyName+'</a>';
