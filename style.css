@@ -38,14 +38,18 @@ button:active {
   background: #7dc9bb;
 }
 
-table, th {
-  border: 1px dotted black;
-}
-
-
 table {
-  margin-top: 15px;
+  border: 1px dotted black;
+  margin: 2%;
 }
+
+thead {
+  background-color: #4080bf;
+  color: #ffffff;
+  display: inline-block;
+  opacity: 0.8;
+}
+
 
 .outer {
   width: 80%;
