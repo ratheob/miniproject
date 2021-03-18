@@ -48,10 +48,7 @@ function outputData(person) {
   if ((new RegExp(/austria/gi)).test(person.profession)) {
     row.classList.add('austrian');
   }
-  // Add a class to Auto*
-  if ((new RegExp(/(author|writer)/gi)).test(person.profession)) {
-    row.classList.add('auto');
-  }
+
 
   // Add a class to age, shown everyone born 1950 or earlier*
   if ((new RegExp(/19[0-5][0-9]/gi)).test(person.birthyear)) {
