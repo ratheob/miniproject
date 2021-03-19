@@ -105,6 +105,9 @@ window.onload = function() {
       }
     }
 
+    var x = document.getElementById("persons-table").rows.length;
+      document.getElementById("twothirds").innerHTML = "Found " + x + " tr elements in the table.";
+
 call.countrows();
 
   }
