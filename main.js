@@ -63,9 +63,6 @@ function outputData(person) {
   // Add a class to age, shown everyone born 1950 or earlier*
   if ((new RegExp(/19[0-4][0-9]/gi)).test(person.birthyear)) {
     row.classList.add('age');
-    var x = document.getElementsByClassName("age");
-      //document.getElementById("twothirds").innerHTML = "Found " + x + " tr elements in the table.";
-      document.getElementById('twothirds').innerHTML = "<p>Total found items: " + x +"</p>";
 }
 }
 
