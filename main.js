@@ -63,6 +63,9 @@ function outputData(person) {
   // Add a class to age, shown everyone born 1950 or earlier*
   if ((new RegExp(/19[0-4][0-9]/gi)).test(person.birthyear)) {
     row.classList.add('age');
+    var x = document.getElementsByClassName("age");
+      //document.getElementById("twothirds").innerHTML = "Found " + x + " tr elements in the table.";
+      document.getElementById('twothirds').innerHTML = "<p>Total found items: " + x +"</p>";
 }
 }
 
@@ -90,16 +93,15 @@ window.onload = function() {
       // If the button's value (for example "austrian") is included in the CSS classes of the table row (for example <tr class="austrian actor">...</tr>) then show it
       } else if (tableRows[i].classList.contains(this.value)) {
         tableRows[i].style.display = "table-row";
-        var x = document.getElementsByTagName("tbody")[0].classList.contains(this.value).rows.length;
-          //document.getElementById("twothirds").innerHTML = "Found " + x + " tr elements in the table.";
-          document.getElementById('twothirds').innerHTML = "<p>Found results: " + x +"</p>";
-
       } else {
       // If not hide this row, meaning that this row is not matched by the selected button
         tableRows[i].style.display = "none";
       }
     }
 
+    var x = document.getElementsByTagName("tbody")[0].rows.length;
+      //document.getElementById("twothirds").innerHTML = "Found " + x + " tr elements in the table.";
+      document.getElementById('twothirds').innerHTML = "<p>Total list items: " + x +"</p>";
 
   }
 
