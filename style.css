@@ -63,7 +63,7 @@ border-style: unset;
 
 }
 
-button:hover {
+button:hover, .button-selected {
   background: #7dc9bb;
   background-image: -webkit-linear-gradient(top, #7dc9bb, #3498db);
   background-image: -moz-linear-gradient(top, #7dc9bb, #3498db);

@@ -24,15 +24,18 @@ function outputData(person) {
   var name = person.link.split(/[/]+/).pop();
   // Make the name more readable, test with: document.write(prettyName + "<br />");
   var prettyName = name.replace(/_/g, ' ');
-  // Get the table HTML element
+
+  // Get the tablebody HTML element
   var table = document.getElementsByTagName('tbody')[0];
-  // Create an empty <tr> element and add it to the 2st position of the table:
+  // Create an empty <tr> element and add it to the 1st position of the tablebody:
   var row = table.insertRow(0);
+
   // Insert new cells (<td> elements) at the first 4 positions of the "new" <tr> element:
   var cell_1 = row.insertCell(0);
   var cell_2 = row.insertCell(1);
   var cell_3 = row.insertCell(2);
   var cell_4 = row.insertCell(3);
+
   // Add some text to the new cells:
   cell_1.innerHTML = person.birthyear;
   cell_2.innerHTML = '<a href="'+person.link+'" target="_blank">'+prettyName+'</a>';
@@ -43,10 +46,13 @@ function outputData(person) {
   // Add a class to actors
   if ((new RegExp(/(actor|actress)/gi)).test(person.profession)) {
     row.classList.add('actor');
+
+
   }
   // Add a class to Austrians
   if ((new RegExp(/austria/gi)).test(person.profession)) {
     row.classList.add('austrian');
+
   }
 
   // Add a class to Auto*
@@ -73,6 +79,9 @@ window.onload = function() {
   function toggleRows() {
     // Get all rows of our table
     var tableRows = document.getElementsByTagName('tr');
+
+
+
     // Loop through all of those rows (i.e.: <tr>...</tr> elements)
     for (var i = 1, length = tableRows.length; i < length; i++) {
       // If the button's value is reset show all table rows. "table-row" is here a CSS style attribute for visible rows!
