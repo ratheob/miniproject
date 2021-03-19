@@ -96,16 +96,16 @@ window.onload = function() {
       }
     }
 
-    function countrows() {
+call.function countrows();
 
-      var allTableData = document.getElementById("persons-table");
-      var numberOfRows = allTableData.rows.length;
-      var resultoutput = document.getElementsByTagName('tbody').lastElementChild.innerHTML = numberOfRows;
-
-
-
-
-
-    }
   }
+
+  //Function to count the row output
+      function countrows() {
+
+        var allTableData = document.getElementById("persons-table");
+        var numberOfRows = allTableData.rows.length;
+        var resultoutput = document.getElementsByTagName('tbody').lastElementChild.innerHTML = numberOfRows;
+  }
+
 };
