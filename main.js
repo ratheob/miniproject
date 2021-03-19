@@ -105,7 +105,7 @@ window.onload = function() {
       }
     }
 
-countrows();
+call.countrows();
 
   }
 
