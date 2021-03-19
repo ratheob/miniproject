@@ -96,9 +96,9 @@ window.onload = function() {
       }
     }
 
-    var x = document.getElementsByTagName("tbody")[0].rows.length;
+    var x = document.getElementsByTagName("tbody")[0].classList.contains(this.value).rows.length;
       //document.getElementById("twothirds").innerHTML = "Found " + x + " tr elements in the table.";
-      document.getElementById('twothirds').innerHTML = "<p>Found results:" + x +"</p>";
+      document.getElementById('twothirds').innerHTML = "<p>Found results: " + x +"</p>";
 
   }
 
