@@ -95,5 +95,17 @@ window.onload = function() {
         tableRows[i].style.display = "none";
       }
     }
+
+    function countrows() {
+
+      var allTableData = document.getElementById("persons-table");
+      var numberOfRows = allTableData.rows.length;
+      var resultoutput = document.getElementsByTagName('tbody').lastElementChild.innerHTML = numberOfRows;
+
+
+
+
+
+    }
   }
 };
