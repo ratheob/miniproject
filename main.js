@@ -96,7 +96,7 @@ window.onload = function() {
       }
     }
 
-call.function countrows();
+countrows();
 
   }
 
