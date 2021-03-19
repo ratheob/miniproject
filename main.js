@@ -75,6 +75,15 @@ window.onload = function() {
     buttons[i].addEventListener('click', toggleRows, false);
   }
 
+
+    //Function to count the row output
+        function countrows() {
+
+          var allTableData = document.getElementById("persons-table");
+          var numberOfRows = allTableData.rows.length;
+          var resultoutput = document.getElementsByTagName('tbody').lastElementChild.innerHTML = numberOfRows;
+    }
+
   // This function is responsible for toggling the relevant rows visible/hidden
   function toggleRows() {
     // Get all rows of our table
@@ -100,12 +109,5 @@ countrows();
 
   }
 
-  //Function to count the row output
-      function countrows() {
-
-        var allTableData = document.getElementById("persons-table");
-        var numberOfRows = allTableData.rows.length;
-        var resultoutput = document.getElementsByTagName('tbody').lastElementChild.innerHTML = numberOfRows;
-  }
 
 };
